@@ -1,25 +1,8 @@
-# SPiRA
+# iXPy
 
-The goal of SPiRA is develop a framework for IC designers to create and verify cicuit layouts. The framework uses a parameterized methodology that allows designers to generate PCells, apply rule checking, and LVS verification. The framework allows the following, though some parts are still under active development:
-
-* **RDD**: The newly proposed Python-based PDK schema, called Rule Deck Database. This schema allows connecting directly to Python object trees for advance data manipulation.
-* **PCells**: Layout generators can be created using basic Python. The framework focusses on reducing native Python boiler-plate code to improve design efficiency.
-* **DRC** (experimental): Rule checking are done by placing parameter rescritions, and connecting to a Template Cell created defined in the RDD. 
-* **LVS** (experimental): A graph network can be extracted using a mesh-to-graph methodology. 
-
-## Depenencies
-
-On Fedora install the following:
-
-```bash
-sudo dnf install redhat-rpm-config
-sudo dnf install gcc-c++
-sudo dnf install python3-devel
-sudo dnf install tkinter
-sudo dnf install gmsh
-```
-
-Documentation for other Linux systems can be found in [installation](https://spira.readthedocs.io/en/latest/installation.html)
+The iXPy package is a Python parser/wrapper for the InductEX software package to interface with the 
+SPiRA framework. The core features are to parse the .ldf file to the SPiRA RDD script, 
+and call InductEX using Python commands.
 
 ## Installation
 
@@ -40,23 +23,11 @@ pip install .
 pip install -e .
 ```
 
-## Documentation
-
-The complete framework [documentation](https://spira.readthedocs.io/en/latest/overview.html) explains the basics of the RDD and PCell API. Note that the DRC and LVS modules are still being developed.
-Examples of using the PCell implementation is given in [examples](https://spira.readthedocs.io/en/latest/pcell_examples.html).
-
-
 ## History of changes
 
-### Version 0.0.2 (Dec 27, 2018)
-* Started adding unit tests using pytest.
-* Updated auto doc generation for classes.
-* Added MidPointField for port and terminal midpoints.
-* Introduces the Shape class that allows for complex point
-manipulations. Shape points are created in the instance cell 
-method: `def create_points(self, points)`.
-* Introduces `term` which is a vertical connection port.
-* Routes are defined as a Shape with two connected terminal ports.
-
-### Version 0.0.1 (Dec 01, 2018)
+### Version 0.0.1 (Dec 27, 2018)
 * Initial release.
+
+
+
+
