@@ -1,13 +1,5 @@
-gdspy
-networkx
-pandoc
-meshio
-scipy
-plotly
 pytest
-pyclipper
-matplotlib
 termcolor
-shapely
-lxml
 colorama
+scipy
+numpy

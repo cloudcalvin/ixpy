@@ -17,26 +17,12 @@ setup(
     url="https://github.com/rubenvanstaden/spira",
 
     install_requires=[
-        # Visual packages
-        'matplotlib',
-        'plotly',
-        'pyqt5'
-        'lxml',
-
         # Basic packages
         'termcolor',
         'colorama',
-        'pandoc',
         'scipy',
         'pytest',
-
-        # Core packages
-        'gdspy',
-        'shapely',
-        'pyclipper',
-        'networkx',
-        'pygmsh',
-        'meshio',
+        'numpy',
     ],
 
     packages=['ixpy'],
